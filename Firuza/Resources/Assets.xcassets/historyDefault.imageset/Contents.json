@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "historyDefault.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

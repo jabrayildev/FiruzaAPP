@@ -6,13 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EB6D0A9F2FD1C2F30092292D /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = EB6D0A9E2FD1C2F30092292D /* FirebaseMessaging */; };
+		EB6FA4972FD02DEE00FCF829 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = EB6FA4962FD02DEE00FCF829 /* FirebaseCore */; };
+		EB6FA4992FD02E0500FCF829 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EB6FA4982FD02E0500FCF829 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		EB3AF7972FB8A0C300E5C8BD /* Firuza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Firuza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EB6D0A9D2FD1C27C0092292D /* Exceptions for "Firuza" folder in "Firuza" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = EB3AF7962FB8A0C300E5C8BD /* Firuza */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EB3AF7992FB8A0C300E5C8BD /* Firuza */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EB6D0A9D2FD1C27C0092292D /* Exceptions for "Firuza" folder in "Firuza" target */,
+			);
 			path = Firuza;
 			sourceTree = "<group>";
 		};
@@ -23,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6D0A9F2FD1C2F30092292D /* FirebaseMessaging in Frameworks */,
+				EB6FA4972FD02DEE00FCF829 /* FirebaseCore in Frameworks */,
+				EB6FA4992FD02E0500FCF829 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +87,9 @@
 			);
 			name = Firuza;
 			packageProductDependencies = (
+				EB6FA4962FD02DEE00FCF829 /* FirebaseCore */,
+				EB6FA4982FD02E0500FCF829 /* FirebaseFirestore */,
+				EB6D0A9E2FD1C2F30092292D /* FirebaseMessaging */,
 			);
 			productName = Firuza;
 			productReference = EB3AF7972FB8A0C300E5C8BD /* Firuza.app */;
@@ -94,6 +119,9 @@
 			);
 			mainGroup = EB3AF78E2FB8A0C300E5C8BD;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EB6FA4922FD029CF00FCF829 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EB3AF7982FB8A0C300E5C8BD /* Products */;
 			projectDirPath = "";
@@ -256,6 +284,7 @@
 				DEVELOPMENT_TEAM = ZSW2M8FRUM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Firuza/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -288,6 +317,7 @@
 				DEVELOPMENT_TEAM = ZSW2M8FRUM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Firuza/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -332,6 +362,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB6FA4922FD029CF00FCF829 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB6D0A9E2FD1C2F30092292D /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB6FA4922FD029CF00FCF829 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		EB6FA4962FD02DEE00FCF829 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB6FA4922FD029CF00FCF829 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		EB6FA4982FD02E0500FCF829 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB6FA4922FD029CF00FCF829 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB3AF78F2FB8A0C300E5C8BD /* Project object */;
 }
