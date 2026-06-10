@@ -84,8 +84,11 @@ This project is built using modern iOS development practices:
 > Add your screenshots here
 
 - Home Screen (Main Timer View)
+- ![Home Screen](IMG_0239.png)
 - History Screen
+- ![History Screen](IMG_0240.png)
 - App Icon / Home Screen Integration
+- ![App Icon](IMG_0238.png)
 
 ---
 
